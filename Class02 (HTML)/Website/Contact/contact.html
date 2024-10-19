@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Contact US</h1>
+
+    <!-- methods -> GEt -> POST -->
+    <form action="./Thankyou.html">
+
+        <label for="firstName" >First Name:</label>
+        <input type="text" id="firstName" name="firstName"  required/> 
+
+        <label for="secondName" >Second Name:</label>
+        <input type="text" id="secondName" name="secondName" required/> 
+
+        <br />
+        <br />
+
+        <label for="email">Email:</label>
+        <input type="email" placeholder="xyz@gmail.com" name="userEmail" id="email" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" name="userPhone" id="phone" required>
+
+        <br />
+        <br />
+
+        <label for="phone">Phone:</label>
+        <input type="number" name="userPhone" id="phone" required>
+
+        <br />
+        <br />
+
+        <label for="password">Password:</label>
+        <input type="password" name="userPassword" id="password" required>
+        <br />
+        <br />
+
+        <label for="dateOfBirth">Date Of Birth:</label>
+        <input type="date" name="dateOfBirth" id="dateOfBirth"
+        min="2024-01-01" max="2024-12-30" required>
+
+        <label for="time">Date Of Birth:</label>
+        <input type="time" name="time" id="time"
+     required>
+
+        <br />
+        <br />
+        
+        <h4>Select Your Gender</h4>
+        <input type="radio" id="male" name="gender" value="male"> 
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+
+        <input type="radio" id="others" name="gender" value="others">
+        <label for="others">Others</label>
+    
+
+
+        <br />
+        <br />
+        <h4>Select Your Gender</h4>
+        <select name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="others">Others</option>
+        </select>
+
+        <br />
+        <br />
+
+        <h4>Skills:</h4>
+        <input type="checkbox" id="html" value="HTML">
+        <label for="html">HTML</label>
+
+        <input type="checkbox" id="css" value="CSS">
+        <label for="css">CSS</label>
+
+        <input type="checkbox" id="js" value="JS">
+        <label for="js">JS</label>
+
+
+
+        <br />
+        <br />
+
+        <label for="reviews">Reviews</label>
+        <br>
+        <textarea name="reviews" id="reviews"  rows="5"></textarea>
+
+        <br />
+        <br />
+
+        <input type="submit" value="Submit"/>
+        
+
+        <!-- <input type="button" value="Submit"/> -->
+        <!-- <button>Submit</button> -->
+
+    </form>    
+    <!-- self closing tag -->
+
+</body>
+</html>
