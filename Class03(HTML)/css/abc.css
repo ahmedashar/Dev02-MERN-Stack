@@ -1,0 +1,53 @@
+/* 3 Ways of applying CSS
+    Internal CSS
+    External CSS
+    Inline CSS
+*/
+/* 4 SELECTORS
+    1. Universal
+    2. TAGNAME
+    3. Id (Unique)  denote: # (hash)
+    4. Class (Common) denote: . (dot)
+*/
+
+/* Tag Selector */
+body {
+    background-color: lightskyblue;
+}
+
+h1{
+    background-color: bisque;
+   
+}
+p{
+    background-color: aliceblue;
+}
+
+/* ID Selector */
+#heading1{
+    color: darkorange;
+    text-align: center;
+    text-decoration-line: underline overline;
+}
+#heading2{
+    color: darkblue;
+    text-decoration-line: overline;
+    
+}
+#heading3{
+    color: darkred;
+    text-align: center;
+    text-decoration-line: line-through;
+    text-decoration-color: black;
+}
+#heading4{
+    color: darkolivegreen;
+    text-align: end;
+}
+
+/* CLASS SELECTOR */
+
+.para{
+    color: darkslategrey;
+    text-transform: capitalize;
+}
