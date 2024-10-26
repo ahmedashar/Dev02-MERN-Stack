@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #D4BEE4;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3B1E54;
+    padding: 10px;
+}
+.menu_bar{
+  display: none;
+}
+.navlinks a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+.box1{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    /* for center a div (but width must be applied) */
+    /* margin: auto; */ 
+
+    /* ----transition---- */
+    /* transition-property: background-color color; */
+    /* transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+    transition-delay: 2s; */
+    transition: all 1s linear 1s;
+}
+.box1:hover{
+    background-color: black;
+    width: 200px;
+    color: white;
+    cursor: pointer;
+}
+.images_container{
+    text-align: center;
+}
+.images_container img{
+    width: 100px;
+    height: 400px;
+    object-fit: cover;
+    transition: width 0.5s ease-out .2s;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.images_container img:hover{
+    width: 300px;
+}
+
+/* .img4{
+    object-position: -300px 0px;
+} */
+
+.boxes{
+    width: 200px;
+    border: 1px solid red;
+    height: 200px;
+    margin:10px;
+    /* animation: name duration timing-function delay iteration-count direction; */
+    animation-name: changeWidth;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate; 
+    /*normaL 0 to 100 */
+    /*alternate 0 to 100 then 100 to 0 */
+    animation-play-state: paused;
+}
+.boxes:hover{
+    animation-play-state: running;
+}
+.box3{
+    animation-timing-function: ease-in;
+
+}
+
+@keyframes changeWidth{
+    0%{
+        width: 200px;
+        background-color: red;
+    }
+    100%{
+        width: 600px;
+        background-color: red;
+    }
+}
+
+@keyframes changeColor{
+    from{
+        background-color: red;
+        color: white;
+    }
+    to{
+        background-color: green;
+        color: black;
+        border-radius: 50%;
+    }
+}
+/* 
+translateX(10px), translateY(10px), translate(X,Y), for movement
+scaleX, scaleY, scale, for size like scale(2)
+rotateX(180deg), rotateY, rotate, 
+skewX(10deg), skewY, skew, */
+
+.box4{
+    width: 200px;
+    height: 200px;
+    border: 1px solid green;
+}
+.wheel img{
+    width: 250px;
+    /* animation: name duration timing-function delay iteration-count direction;*/
+    
+    animation-name: apnyHisabKiAnimation;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: 1; 
+    animation-direction: normal;
+    animation-play-state: paused;
+    animation-play-state: paused;
+}
+.wheel img:hover{
+    animation-play-state: running;
+
+}
+
+/* @keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+} */
+
+@keyframes apnyHisabKiAnimation{
+    0%{
+        transform: scale(1) rotate(0);
+    }
+    50%{
+        transform: scale(2) rotate(0);
+        
+    }
+    75%{
+        transform: scale(2) rotate(360deg);
+        
+    }
+    100%{
+        transform: scale(1) rotate(360deg);
+
+    }
+}
+
+/* max-width (less than) and min-width (greater than) */
+
+
+@media (max-width: 767.98px) { 
+    body{
+        background-color: red;
+    }
+}
+@media (max-width: 575.98px) {
+    body{
+    background-color: green;
+    }
+    .menu_bar{
+        display: block;
+      }
+      .navlinks{
+        display: none;
+      }
+ }
