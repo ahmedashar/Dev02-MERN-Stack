@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #myBox{
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            cursor: pointer;
+            background-color: aliceblue;
+            text-align: center;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!-- MOUSE EVENTS: click, dblclick, contextmenu, mouseover, mouseout -->
+
+    <div id="myBox">CLICK HERE</div>
+
+    <script>
+        let box = document.getElementById("myBox");
+
+        function handleClick(event){
+            alert("You clicked the box")
+        }
+
+        function handleDoubleClick(event){
+            alert("You double clicked the box")
+        }
+
+        function handleRightClick(event){
+            event.preventDefault();
+            alert("You right clicked the box")
+        }
+
+        function handleMouseOver(event){
+            event.target.style.backgroundColor = "yellow";
+        }
+
+        function handleMouseOut(event){
+            event.target.style.backgroundColor = "aliceblue";
+        }
+
+
+
+
+
+
+
+
+
+
+
+        // box.addEventListener("click", handleClick);
+        box.addEventListener("dblclick", handleDoubleClick);
+        box.addEventListener("contextmenu", handleRightClick);
+        box.addEventListener("mouseover", handleMouseOver);
+        box.addEventListener("mouseout", handleMouseOut);
+
+
+
+
+    </script>
+</body>
+</html>
