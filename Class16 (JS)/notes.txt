@@ -1,0 +1,39 @@
+dom create
+objects --> create, read, update, delete keyword 
+localStorage
+
+In JavaScript, objects are collections of key-value pairs where keys are strings (or Symbols) and values can be of any data type (strings, numbers, functions, other objects, etc.). Objects are one of the most important data types in JavaScript and are fundamental to its programming paradigm.
+
+const person = {
+  name: 'John',
+  age: 30,
+  isMarried: false,
+  greet: function() {
+    return `Hello, my name is ${this.name}`;
+  }
+};
+
+
+1. Local Storage
+Purpose: Stores data with no expiration time. Data persists even after the browser is closed and reopened.
+Storage Limit: Typically 5MB per origin.
+Usage: Ideal for storing user preferences, themes, or settings.
+
+
+2. Session Storage
+Purpose: Stores data for the duration of the page session. Data is cleared when the tab is closed.
+Storage Limit: Similar to local storage, typically 5MB per origin.
+Usage: Suitable for session-specific data like temporary form data or page state.
+
+
+
+Ashar Ahmed is inviting you to a scheduled Zoom meeting.
+
+Topic: Dev02 JS
+Time: Dec 1, 2024 10:00 PM Islamabad, Karachi, Tashkent
+
+Join Zoom Meeting
+    https://us05web.zoom.us/j/89139596409?pwd=kscrdL7a6CeAQqefLKbS000d2Px9ke.1
+
+Meeting ID: 891 3959 6409
+Passcode: BLMB40
