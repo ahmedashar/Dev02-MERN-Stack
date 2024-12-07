@@ -1,0 +1,31 @@
+body {
+    background: rgb(18, 18, 18) !important;
+    color     : #fff !important;
+}
+
+.title {
+    font-weight    : 800;
+    font-size      : 52px;
+    text-decoration: underline white;
+}
+
+.list_container {
+    list-style: none;
+    padding   : 0px !important;
+}
+
+.list_container li {
+    padding        : 5px;
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    gap            : 10px;
+}
+
+.list_container li span {
+    overflow     : hidden;
+    height       : 30px;
+    white-space  : nowrap;
+    text-overflow: ellipsis;
+
+}
