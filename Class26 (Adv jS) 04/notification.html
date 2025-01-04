@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #notification{
+            display: none;
+            background-color: cadetblue;
+            color: aliceblue;
+            border-radius: 7px;
+            bottom: 10px;
+            right: 10px;
+            position: fixed;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="notifyME()">Notify Mee Hurry</button>
+    <div id="notification"></div>
+    <script>
+        function notifyME(){
+            var notification = document.querySelector('#notification');
+            notification.textContent = 'Friend Request Sent!!';
+            notification.style.display = 'block';
+
+            
+            //to remove notification we use set timeout
+            setTimeout(function(){
+                notification.style.display = 'none';
+            }, 3500)
+        }
+
+    </script>
+</body>
+</html>
