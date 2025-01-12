@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoisting & Closures</title>
+</head>
+
+<body>
+    <h1> Hoisting in JavaScript</h1>
+    <p>
+
+        Hoisting is a JavaScript mechanism where variables, functions, and classes are moved to the top of their
+        containing scope during the compile phase. This means they can be used in code before they are declared.
+        <br>
+        <br>
+        However:
+        <br>
+        <br>
+
+        Variables declared with var are hoisted but initialized to undefined.
+        <br>
+        <br>
+        Variables declared with let and const are hoisted but remain in a "temporal dead zone" (TDZ) until their
+        declaration is encountered.
+        <br>
+        <br>
+        Function declarations are hoisted completely (both the function definition and declaration).
+    </p>
+
+    <h1>Closures</h1>
+    <p>
+        <b>Local vs Global Scope</b>
+        <br>
+        <br>
+        1. Local Scope
+        A variable has local scope when it is declared inside a function or a block (e.g., within {} in ES6+).
+        It can only be accessed within the function or block where it is defined.
+        Local variables are created when the function or block starts execution and are destroyed when it ends.
+        <br>
+        <br>
+        
+        2. Global Scope
+        A variable has global scope when it is declared outside of all functions or blocks.
+        It can be accessed and modified from anywhere in the code.
+        <br>
+        <br>
+    </p>
+    <p>
+       <b> Lexical Scope </b>
+       <br>
+       <br>
+       Lexical scope refers to the fact that the scope of a variable is determined by its placement within the source code, and nested functions have access to variables declared in their outer scopes.
+       
+       <br>
+       <br>
+       In JavaScript:
+       
+       Variables defined inside a function are local to that function.
+       Variables defined outside any function are global.
+       Inner functions can access variables from their parent function due to the lexical environment.
+       
+       <br>
+       <br>
+       
+       <b> Closure</b>
+       <br>
+       <br>
+       A closure is created when a function "remembers" the variables from its lexical scope, even after the outer function has finished executing.
+       
+       <br>
+       <br>
+       Closures allow inner functions to access and manipulate variables from their outer (enclosing) functions, even after the outer function has returned.
+       
+       <br>
+       <br>
+        </p>
+    <script src="./app.js"></script>
+</body>
+
+</html>
