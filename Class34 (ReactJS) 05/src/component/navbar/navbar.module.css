@@ -1,0 +1,12 @@
+.nav_links{
+    list-style-type: none;
+}
+.nav_links li a{
+    color: white;
+}
+.active_link{
+    font-weight: bold;
+}
+.link{
+    text-decoration: none;
+}
