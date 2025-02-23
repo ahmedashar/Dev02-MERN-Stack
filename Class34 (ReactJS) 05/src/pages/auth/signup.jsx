@@ -63,7 +63,8 @@ const Signup = () => {
 
         if(validateForm()){
             console.log("Submits")
-            navigate("/home")
+                // "/home?name='Ashar'&email='ashar@gmail.com'"
+            navigate(`/home?name=${formData.name}&email=${formData.email}`, {state: formData})
         }
     }
     console.log(formData)
