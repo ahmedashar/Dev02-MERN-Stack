@@ -1,0 +1,14 @@
+{
+  "name": "backendnodejs",
+  "version": "1.0.0",
+  "description": "the fundamental of nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "Ashar",
+  "license": "ISC"
+}
