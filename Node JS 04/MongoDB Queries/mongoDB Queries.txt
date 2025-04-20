@@ -1,0 +1,51 @@
+show dbs
+
+use databasename (if not found then create new with provided name)
+
+show collections
+
+-----
+Insert Data in collection.
+
+db.collection_name.insertOne({"name":"Ashar", "age":25, gender:"male"}) -->  (if collection not found with providedname then new collection is created)
+
+
+db.collection_name.insertMany([{"name":"Ashar", "age":25, gender:"male"}]) 
+
+--------
+Read Data in collection
+
+db.students.find()  //get all data
+
+db.students.find({"gender":"female"})  // filter data by gender === "female"
+
+
+db.movies.find({"year": {$gt: 2020}}) // gt is an operator used for filter data
+
+--> $lt, $gte, $lte, $ne, {$in: ["Ashar", "Owais"]},  {$nin: ["Ashar", "Owais"]}
+
+--------
+Update
+
+db.collection_name.updateOne({"name": "Ashar"}, {$set: {"age": 20}})
+
+db.collection_name.updateMany({"name": "Ashar"}, {$set: {"age": 20}}) 
+
+-------
+Delete
+
+db.students.deleteMany({"gender":"female"})
+
+db.students.deleteOne({"name":"Ashar"})
+
+
+------
+count & limit & sort
+
+db.collection_name.find().countDocuments()
+
+db.students.find({"gender":"female"}).countDocuments() // count of students whose gender is female
+
+db.students.find().sort({age: 1}) // 1 (asc), -1 (dsc)
+
+db.students.find().limit(10)
